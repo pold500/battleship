@@ -20,9 +20,9 @@ class Tower;
 class Enemy : public CCSprite
 {
 private:
-    int maxHP;
-    int currentHP;
-    bool active;
+    int   maxHP;
+    int   currentHP;
+    bool  active;
     float walkingSpeed;
     
     GameLayer* theGame;

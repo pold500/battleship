@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "GLOBAL">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_obContentSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameSetupLayer::init():GameSetupLayer.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Ship::draw():Ship.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "GameGridLayer::loadShips(std::__1::vector&lt;std::__1::shared_ptr&lt;Ship&gt;, std::__1::allocator&lt;std::__1::shared_ptr&lt;Ship&gt; &gt; &gt; const&amp;):GameGridLayer.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "GameGridLayer::draw():GameGridLayer.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "BSGameLayer::init():BSGameLayer.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCNode::boundingBox():CCNode.cpp">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

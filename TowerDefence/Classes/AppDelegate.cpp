@@ -10,7 +10,7 @@
 
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
-#include "GameLayer.h"
+#include "StartScreenLayer.h"
 #include <string>
 
 USING_NS_CC;
@@ -33,14 +33,14 @@ typedef struct tagResource
 }Resource;
 
 //List of supported resolutions
-static Resource iphone  =  { cocos2d::CCSizeMake(480, 320),   "iphone" };
-static Resource iphonehd  =  { cocos2d::CCSizeMake(960, 640),   "iphonehd" };
+static Resource iphone    =  { cocos2d::CCSizeMake(480, 320), "iphone"   };
+static Resource iphonehd  =  { cocos2d::CCSizeMake(960, 640), "iphonehd" };
 
 //We don't actually support iPhone5 (don't have images for it), but you can create such folder in resources and add required graphics.
 //Everything should work ok.
 static Resource iphone5  =  { cocos2d::CCSizeMake(1136, 640),   "iphone5" };
 
-static cocos2d::CCSize designResolutionSize = cocos2d::CCSizeMake(480, 320);
+static cocos2d::CCSize designResolutionSize        = cocos2d::CCSizeMake(480, 320);
 static cocos2d::CCSize designResolutionSizeiPhone5 = cocos2d::CCSizeMake(568, 320);
 
 bool AppDelegate::applicationDidFinishLaunching()
@@ -97,7 +97,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = GameLayer::scene();
+    CCScene *pScene = StartScreenLayer::scene();//GameLayer::scene();
 
     // run
     pDirector->runWithScene(pScene);

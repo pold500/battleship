@@ -52,9 +52,9 @@ void Tower::shootWeapon()
     theGame->addChild(bullet);
     
     //Bullet actions: Move from turret to enemy, then make some damage to enemy, and finally remove bullet sprite.
-    CCMoveTo* move = CCMoveTo::create(0.1f, chosenEnemy->getPosition());
-    CCCallFunc* damage = CCCallFunc::create(this, callfunc_selector(Tower::damageEnemy));
-    CCCallFunc* remove = CCCallFuncN::create(this, callfuncN_selector(Tower::removeBullet));        
+    CCMoveTo* move      = CCMoveTo::create(0.1f, chosenEnemy->getPosition());
+    CCCallFunc* damage  = CCCallFunc::create(this, callfunc_selector(Tower::damageEnemy));
+    CCCallFunc* remove  = CCCallFuncN::create(this, callfuncN_selector(Tower::removeBullet));
     CCSequence* actions = CCSequence::create(move, damage, remove, NULL);
     
     bullet->runAction(actions);    

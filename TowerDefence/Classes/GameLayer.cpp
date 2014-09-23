@@ -12,7 +12,7 @@
 #include "Enemy.h"
 #include "SimpleAudioEngine.h"
 
-#define TOWER_COST  300
+#define TOWER_COST  100
 
 const CCArray& GameLayer::getEnemies()
 {
@@ -28,12 +28,12 @@ bool GameLayer::init()
     
     //Initial field values.
     wave = 0;
-    playerHP = 5;
-    playerGold = 1000;
+    playerHP = 7;
+    playerGold = 5000;
     
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();
     
-    CCSprite* background = CCSprite::create("bg.png");
+    CCSprite* background = CCSprite::create("Background.jpg");
     background->setPosition(ccp(winSize.width * 0.5f, winSize.height * 0.5f));
     this->addChild(background);
 
@@ -60,10 +60,10 @@ bool GameLayer::init()
     this->addWaypoints();
     this->loadWave();
 
-    this->setTouchEnabled(true);
+    //this->setTouchEnabled(true);
     
     //Playing background music
-    CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("8bitDungeonLevel.mp3", true);
+    //CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("bgmusic.mp3", true);
     
     return true;
 }

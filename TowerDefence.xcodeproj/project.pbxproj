@@ -282,6 +282,22 @@
 		2ABC7E9917C5F8A20034B671 /* Waypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC7E9717C5F8A10034B671 /* Waypoint.cpp */; };
 		2ABC7E9C17C6029C0034B671 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC7E9A17C6029C0034B671 /* Enemy.cpp */; };
 		2ABC7E9E17C60B100034B671 /* common in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC7E9D17C60B0F0034B671 /* common */; };
+		E94D016F19CAE2A5004EB036 /* StartScreenLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94D016D19CAE2A5004EB036 /* StartScreenLayer.cpp */; };
+		E94D017319CB0923004EB036 /* GameSettingsLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94D017119CB0923004EB036 /* GameSettingsLayer.cpp */; };
+		E94D017619CB0E4E004EB036 /* GameSetupLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94D017419CB0E4E004EB036 /* GameSetupLayer.cpp */; };
+		E94D017919CB21D4004EB036 /* GameGridLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94D017719CB21D4004EB036 /* GameGridLayer.cpp */; };
+		E94D018319CB3342004EB036 /* Ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94D018119CB3342004EB036 /* Ship.cpp */; };
+		E94D018619CB40EF004EB036 /* ShipDock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94D018419CB40EF004EB036 /* ShipDock.cpp */; };
+		E94D018B19CC2239004EB036 /* PlayerDock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94D018919CC2239004EB036 /* PlayerDock.cpp */; };
+		E94D019019CC263B004EB036 /* RTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94D018E19CC263B004EB036 /* RTree.cpp */; };
+		E953792519D1E66200E26A0D /* Constructs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E953791D19D1E66200E26A0D /* Constructs.cpp */; };
+		E953792619D1E66200E26A0D /* QuadTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E953791F19D1E66200E26A0D /* QuadTree.cpp */; };
+		E953792719D1E66200E26A0D /* QuadTreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E953792119D1E66200E26A0D /* QuadTreeNode.cpp */; };
+		E953792819D1E66200E26A0D /* QuadTreeOccupant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E953792319D1E66200E26A0D /* QuadTreeOccupant.cpp */; };
+		E96913EE19D02320005FB2F9 /* BSGameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E96913EC19D02320005FB2F9 /* BSGameLayer.cpp */; };
+		E96913F219D19905005FB2F9 /* GameDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E96913F019D19905005FB2F9 /* GameDriver.cpp */; };
+		E96913F619D19D00005FB2F9 /* OsamaAI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E96913F419D19D00005FB2F9 /* OsamaAI.cpp */; };
+		E96913F919D19D0C005FB2F9 /* BushAI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E96913F719D19D0C005FB2F9 /* BushAI.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -892,6 +908,40 @@
 		2ABC7E9A17C6029C0034B671 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
 		2ABC7E9B17C6029C0034B671 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		2ABC7E9D17C60B0F0034B671 /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = common; sourceTree = "<group>"; };
+		E94D016D19CAE2A5004EB036 /* StartScreenLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StartScreenLayer.cpp; sourceTree = "<group>"; };
+		E94D016E19CAE2A5004EB036 /* StartScreenLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScreenLayer.h; sourceTree = "<group>"; };
+		E94D017119CB0923004EB036 /* GameSettingsLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSettingsLayer.cpp; sourceTree = "<group>"; };
+		E94D017219CB0923004EB036 /* GameSettingsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettingsLayer.h; sourceTree = "<group>"; };
+		E94D017419CB0E4E004EB036 /* GameSetupLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSetupLayer.cpp; sourceTree = "<group>"; };
+		E94D017519CB0E4E004EB036 /* GameSetupLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSetupLayer.h; sourceTree = "<group>"; };
+		E94D017719CB21D4004EB036 /* GameGridLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameGridLayer.cpp; sourceTree = "<group>"; };
+		E94D017819CB21D4004EB036 /* GameGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameGridLayer.h; sourceTree = "<group>"; };
+		E94D018119CB3342004EB036 /* Ship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ship.cpp; sourceTree = "<group>"; };
+		E94D018219CB3342004EB036 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
+		E94D018419CB40EF004EB036 /* ShipDock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShipDock.cpp; sourceTree = "<group>"; };
+		E94D018519CB40EF004EB036 /* ShipDock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipDock.h; sourceTree = "<group>"; };
+		E94D018919CC2239004EB036 /* PlayerDock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerDock.cpp; sourceTree = "<group>"; };
+		E94D018A19CC2239004EB036 /* PlayerDock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDock.h; sourceTree = "<group>"; };
+		E94D018E19CC263B004EB036 /* RTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTree.cpp; sourceTree = "<group>"; };
+		E94D018F19CC263B004EB036 /* RTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTree.h; sourceTree = "<group>"; };
+		E94D019119CC4AC6004EB036 /* Point2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Point2D.h; sourceTree = "<group>"; };
+		E953791D19D1E66200E26A0D /* Constructs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Constructs.cpp; sourceTree = "<group>"; };
+		E953791E19D1E66200E26A0D /* Constructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constructs.h; sourceTree = "<group>"; };
+		E953791F19D1E66200E26A0D /* QuadTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuadTree.cpp; sourceTree = "<group>"; };
+		E953792019D1E66200E26A0D /* QuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
+		E953792119D1E66200E26A0D /* QuadTreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuadTreeNode.cpp; sourceTree = "<group>"; };
+		E953792219D1E66200E26A0D /* QuadTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTreeNode.h; sourceTree = "<group>"; };
+		E953792319D1E66200E26A0D /* QuadTreeOccupant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuadTreeOccupant.cpp; sourceTree = "<group>"; };
+		E953792419D1E66200E26A0D /* QuadTreeOccupant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTreeOccupant.h; sourceTree = "<group>"; };
+		E96913EC19D02320005FB2F9 /* BSGameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BSGameLayer.cpp; sourceTree = "<group>"; };
+		E96913ED19D02320005FB2F9 /* BSGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGameLayer.h; sourceTree = "<group>"; };
+		E96913F019D19905005FB2F9 /* GameDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameDriver.cpp; sourceTree = "<group>"; };
+		E96913F119D19905005FB2F9 /* GameDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDriver.h; sourceTree = "<group>"; };
+		E96913F319D19CC3005FB2F9 /* AIInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIInterface.h; sourceTree = "<group>"; };
+		E96913F419D19D00005FB2F9 /* OsamaAI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OsamaAI.cpp; sourceTree = "<group>"; };
+		E96913F519D19D00005FB2F9 /* OsamaAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OsamaAI.h; sourceTree = "<group>"; };
+		E96913F719D19D0C005FB2F9 /* BushAI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BushAI.cpp; sourceTree = "<group>"; };
+		E96913F819D19D0C005FB2F9 /* BushAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BushAI.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -963,6 +1013,8 @@
 		2ABC7AD417C500280034B671 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E94D018D19CC25CF004EB036 /* DataStructures */,
+				E94D017A19CB3075004EB036 /* Ships */,
 				2ABC7AD617C500280034B671 /* AppDelegate.h */,
 				2ABC7AD517C500280034B671 /* AppDelegate.cpp */,
 				2ABC7AD817C500280034B671 /* GameLayer.h */,
@@ -973,6 +1025,24 @@
 				2ABC7E9717C5F8A10034B671 /* Waypoint.cpp */,
 				2ABC7E9B17C6029C0034B671 /* Enemy.h */,
 				2ABC7E9A17C6029C0034B671 /* Enemy.cpp */,
+				E94D016E19CAE2A5004EB036 /* StartScreenLayer.h */,
+				E94D016D19CAE2A5004EB036 /* StartScreenLayer.cpp */,
+				E94D017219CB0923004EB036 /* GameSettingsLayer.h */,
+				E94D017119CB0923004EB036 /* GameSettingsLayer.cpp */,
+				E94D017519CB0E4E004EB036 /* GameSetupLayer.h */,
+				E94D017419CB0E4E004EB036 /* GameSetupLayer.cpp */,
+				E94D017819CB21D4004EB036 /* GameGridLayer.h */,
+				E94D017719CB21D4004EB036 /* GameGridLayer.cpp */,
+				E94D019119CC4AC6004EB036 /* Point2D.h */,
+				E96913ED19D02320005FB2F9 /* BSGameLayer.h */,
+				E96913EC19D02320005FB2F9 /* BSGameLayer.cpp */,
+				E96913F119D19905005FB2F9 /* GameDriver.h */,
+				E96913F019D19905005FB2F9 /* GameDriver.cpp */,
+				E96913F319D19CC3005FB2F9 /* AIInterface.h */,
+				E96913F519D19D00005FB2F9 /* OsamaAI.h */,
+				E96913F419D19D00005FB2F9 /* OsamaAI.cpp */,
+				E96913F719D19D0C005FB2F9 /* BushAI.cpp */,
+				E96913F819D19D0C005FB2F9 /* BushAI.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -2128,6 +2198,36 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		E94D017A19CB3075004EB036 /* Ships */ = {
+			isa = PBXGroup;
+			children = (
+				E94D018219CB3342004EB036 /* Ship.h */,
+				E94D018119CB3342004EB036 /* Ship.cpp */,
+				E94D018519CB40EF004EB036 /* ShipDock.h */,
+				E94D018419CB40EF004EB036 /* ShipDock.cpp */,
+				E94D018A19CC2239004EB036 /* PlayerDock.h */,
+				E94D018919CC2239004EB036 /* PlayerDock.cpp */,
+			);
+			name = Ships;
+			sourceTree = "<group>";
+		};
+		E94D018D19CC25CF004EB036 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				E953791D19D1E66200E26A0D /* Constructs.cpp */,
+				E953791E19D1E66200E26A0D /* Constructs.h */,
+				E953791F19D1E66200E26A0D /* QuadTree.cpp */,
+				E953792019D1E66200E26A0D /* QuadTree.h */,
+				E953792119D1E66200E26A0D /* QuadTreeNode.cpp */,
+				E953792219D1E66200E26A0D /* QuadTreeNode.h */,
+				E953792319D1E66200E26A0D /* QuadTreeOccupant.cpp */,
+				E953792419D1E66200E26A0D /* QuadTreeOccupant.h */,
+				E94D018F19CC263B004EB036 /* RTree.h */,
+				E94D018E19CC263B004EB036 /* RTree.cpp */,
+			);
+			name = DataStructures;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2154,7 +2254,7 @@
 		2ABC770C17C4EDFD0034B671 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 2ABC770F17C4EDFD0034B671 /* Build configuration list for PBXProject "TowerDefence" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2229,6 +2329,7 @@
 				2ABC7D7417C5002A0034B671 /* cpGrooveJoint.c in Sources */,
 				2ABC7D7517C5002A0034B671 /* cpPinJoint.c in Sources */,
 				2ABC7D7617C5002A0034B671 /* cpPivotJoint.c in Sources */,
+				E953792819D1E66200E26A0D /* QuadTreeOccupant.cpp in Sources */,
 				2ABC7D7717C5002A0034B671 /* cpRatchetJoint.c in Sources */,
 				2ABC7D7817C5002A0034B671 /* cpRotaryLimitJoint.c in Sources */,
 				2ABC7D7917C5002A0034B671 /* cpSimpleMotor.c in Sources */,
@@ -2256,6 +2357,7 @@
 				2ABC7D8F17C5002A0034B671 /* CCActionEase.cpp in Sources */,
 				2ABC7D9017C5002A0034B671 /* CCActionGrid.cpp in Sources */,
 				2ABC7D9117C5002A0034B671 /* CCActionGrid3D.cpp in Sources */,
+				E94D018619CB40EF004EB036 /* ShipDock.cpp in Sources */,
 				2ABC7D9217C5002A0034B671 /* CCActionInstant.cpp in Sources */,
 				2ABC7D9317C5002A0034B671 /* CCActionInterval.cpp in Sources */,
 				2ABC7D9417C5002A0034B671 /* CCActionManager.cpp in Sources */,
@@ -2265,6 +2367,7 @@
 				2ABC7D9817C5002A0034B671 /* CCActionTween.cpp in Sources */,
 				2ABC7D9917C5002A0034B671 /* CCAtlasNode.cpp in Sources */,
 				2ABC7D9A17C5002A0034B671 /* CCNode.cpp in Sources */,
+				E94D017619CB0E4E004EB036 /* GameSetupLayer.cpp in Sources */,
 				2ABC7D9B17C5002A0034B671 /* CCCamera.cpp in Sources */,
 				2ABC7D9C17C5002A0034B671 /* CCConfiguration.cpp in Sources */,
 				2ABC7D9D17C5002A0034B671 /* CCDirector.cpp in Sources */,
@@ -2279,6 +2382,7 @@
 				2ABC7DA617C5002A0034B671 /* CCNS.cpp in Sources */,
 				2ABC7DA717C5002A0034B671 /* CCObject.cpp in Sources */,
 				2ABC7DA817C5002A0034B671 /* CCSet.cpp in Sources */,
+				E96913F219D19905005FB2F9 /* GameDriver.cpp in Sources */,
 				2ABC7DA917C5002A0034B671 /* CCString.cpp in Sources */,
 				2ABC7DAA17C5002A0034B671 /* CCZone.cpp in Sources */,
 				2ABC7DAB17C5002A0034B671 /* cocos2d.cpp in Sources */,
@@ -2329,7 +2433,11 @@
 				2ABC7DDA17C5002A0034B671 /* CCCommon.mm in Sources */,
 				2ABC7DDB17C5002A0034B671 /* CCDevice.mm in Sources */,
 				2ABC7DDC17C5002A0034B671 /* CCDirectorCaller.mm in Sources */,
+				E953792619D1E66200E26A0D /* QuadTree.cpp in Sources */,
 				2ABC7DDD17C5002A0034B671 /* CCEGLView.mm in Sources */,
+				E94D019019CC263B004EB036 /* RTree.cpp in Sources */,
+				E96913EE19D02320005FB2F9 /* BSGameLayer.cpp in Sources */,
+				E96913F919D19D0C005FB2F9 /* BushAI.cpp in Sources */,
 				2ABC7DDE17C5002A0034B671 /* CCES2Renderer.m in Sources */,
 				2ABC7DDF17C5002A0034B671 /* CCFileUtilsIOS.mm in Sources */,
 				2ABC7DE017C5002A0034B671 /* CCImage.mm in Sources */,
@@ -2340,7 +2448,9 @@
 				2ABC7DE517C5002A0034B671 /* platform.cpp in Sources */,
 				2ABC7DE817C5002A0034B671 /* CCScriptSupport.cpp in Sources */,
 				2ABC7DE917C5002A0034B671 /* CCGLProgram.cpp in Sources */,
+				E94D017319CB0923004EB036 /* GameSettingsLayer.cpp in Sources */,
 				2ABC7DEA17C5002A0034B671 /* ccGLStateCache.cpp in Sources */,
+				E94D017919CB21D4004EB036 /* GameGridLayer.cpp in Sources */,
 				2ABC7DEB17C5002A0034B671 /* CCShaderCache.cpp in Sources */,
 				2ABC7DEC17C5002A0034B671 /* ccShaders.cpp in Sources */,
 				2ABC7DED17C5002A0034B671 /* CCAnimation.cpp in Sources */,
@@ -2350,6 +2460,7 @@
 				2ABC7DF117C5002A0034B671 /* CCSpriteFrame.cpp in Sources */,
 				2ABC7DF217C5002A0034B671 /* CCSpriteFrameCache.cpp in Sources */,
 				2ABC7DF317C5002A0034B671 /* base64.cpp in Sources */,
+				E953792719D1E66200E26A0D /* QuadTreeNode.cpp in Sources */,
 				2ABC7DF417C5002A0034B671 /* CCNotificationCenter.cpp in Sources */,
 				2ABC7DF517C5002A0034B671 /* CCPointExtension.cpp in Sources */,
 				2ABC7DF617C5002A0034B671 /* CCProfiling.cpp in Sources */,
@@ -2364,6 +2475,7 @@
 				2ABC7DFF17C5002A0034B671 /* TransformUtils.cpp in Sources */,
 				2ABC7E0017C5002A0034B671 /* CCUserDefault.mm in Sources */,
 				2ABC7E0117C5002A0034B671 /* ioapi.cpp in Sources */,
+				E94D018B19CC2239004EB036 /* PlayerDock.cpp in Sources */,
 				2ABC7E0217C5002A0034B671 /* unzip.cpp in Sources */,
 				2ABC7E0317C5002A0034B671 /* ZipUtils.cpp in Sources */,
 				2ABC7E0417C5002A0034B671 /* CCIMEDispatcher.cpp in Sources */,
@@ -2394,6 +2506,7 @@
 				2ABC7E1D17C5002A0034B671 /* CCBReader.cpp in Sources */,
 				2ABC7E1E17C5002A0034B671 /* CCBSequence.cpp in Sources */,
 				2ABC7E1F17C5002A0034B671 /* CCBSequenceProperty.cpp in Sources */,
+				E94D016F19CAE2A5004EB036 /* StartScreenLayer.cpp in Sources */,
 				2ABC7E2017C5002A0034B671 /* CCBValue.cpp in Sources */,
 				2ABC7E2117C5002A0034B671 /* CCControlButtonLoader.cpp in Sources */,
 				2ABC7E2217C5002A0034B671 /* CCControlLoader.cpp in Sources */,
@@ -2419,12 +2532,14 @@
 				2ABC7E3617C5002A0034B671 /* CCControl.cpp in Sources */,
 				2ABC7E3717C5002A0034B671 /* CCControlButton.cpp in Sources */,
 				2ABC7E3817C5002A0034B671 /* CCControlColourPicker.cpp in Sources */,
+				E953792519D1E66200E26A0D /* Constructs.cpp in Sources */,
 				2ABC7E3917C5002A0034B671 /* CCControlHuePicker.cpp in Sources */,
 				2ABC7E3A17C5002A0034B671 /* CCControlPotentiometer.cpp in Sources */,
 				2ABC7E3B17C5002A0034B671 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
 				2ABC7E3C17C5002A0034B671 /* CCControlSlider.cpp in Sources */,
 				2ABC7E3D17C5002A0034B671 /* CCControlStepper.cpp in Sources */,
 				2ABC7E3E17C5002A0034B671 /* CCControlSwitch.cpp in Sources */,
+				E96913F619D19D00005FB2F9 /* OsamaAI.cpp in Sources */,
 				2ABC7E3F17C5002A0034B671 /* CCControlUtils.cpp in Sources */,
 				2ABC7E4017C5002A0034B671 /* CCInvocation.cpp in Sources */,
 				2ABC7E4117C5002A0034B671 /* CCScale9Sprite.cpp in Sources */,
@@ -2468,6 +2583,7 @@
 				2ABC7E9617C5012D0034B671 /* Tower.cpp in Sources */,
 				2ABC7E9917C5F8A20034B671 /* Waypoint.cpp in Sources */,
 				2ABC7E9C17C6029C0034B671 /* Enemy.cpp in Sources */,
+				E94D018319CB3342004EB036 /* Ship.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2477,7 +2593,6 @@
 		2ABC7ABF17C4EE050034B671 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2501,6 +2616,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2509,7 +2625,6 @@
 		2ABC7AC017C4EE050034B671 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2558,7 +2673,6 @@
 					"-lxml2",
 					"-lz",
 					"-lsqlite3",
-					"-websockets",
 				);
 				PRODUCT_NAME = TowerDefence;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2588,7 +2702,6 @@
 					"-lxml2",
 					"-lz",
 					"-lsqlite3",
-					"-websockets",
 				);
 				PRODUCT_NAME = TowerDefence;
 				TARGETED_DEVICE_FAMILY = 1;

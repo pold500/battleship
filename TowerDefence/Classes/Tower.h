@@ -12,7 +12,7 @@
 #include "cocos2d.h"
 using namespace cocos2d;
 
-#define kTOWER_COST 300
+#define kTOWER_COST 50
 
 class Enemy;
 class GameLayer;
