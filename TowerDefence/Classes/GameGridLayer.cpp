@@ -121,27 +121,6 @@ void unitTest(QuadTree* tree)
 }
 
 
-//CellState GameGridLayer::hitCell(const CCPoint& gridCoords)
-//{
-//
-//
-//
-//
-////    CCPoint point(gridCoords);
-////    std::vector<QuadTreeOccupant *> queryResult;
-////    Vec2f startPoint = {point.x , point.y };
-////    Vec2f endPoint   = {cellSize, cellSize};
-////    endPoint+=startPoint;
-////    quadTree->Query(AABB(startPoint, endPoint), queryResult);
-////    if(!queryResult.empty()) //if there's a ship in that rect
-////    {
-////        Ship* ship = static_cast<Ship*>(queryResult.back());
-////        return ship->setCellDamage(gridCoords.x, gridCoords.y);
-////        //return ship->getCellDamage(gridCoords.x, gridCoords.y);
-////    }
-////    return CellState::Empty;
-//}
-
 CellState GameGridLayer::hitCell(int i, int j)
 {
     //ship manages it's state, so when the damage reaches the maximum point, we would know.

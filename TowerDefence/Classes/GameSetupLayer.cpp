@@ -130,18 +130,20 @@ void GameSetupLayer::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
                 return;
         }
 
-
-
         mCurrentlyMovingObject->setPosition(ccp(pTouch->getLocation().x, pTouch->getLocation().y));
         if(grid->boundingBox().intersectsRect(mCurrentlyMovingObject->boundingBox()))
         {
-            bindToGridCells(pTouch->getLocation(), CCRect(grid->getPosition().x,        grid->getPosition().y,
-                                                          grid->getContentSize().width, grid->getContentSize().height));
+            bindToGridCells(pTouch->getLocation(), CCRect(grid->getPosition().x,
+                                                          grid->getPosition().y,
+                                                          grid->getContentSize().width,
+                                                          grid->getContentSize().height));
             grid->isCanPlace(pTouch->getLocation(), mCurrentlyMovingObject->getShipType(),
                              mCurrentlyMovingObject->getOrientation());
             grid->setShip(mCurrentlyMovingObject);
             grid->displayMarkline = true;
-        } else {
+        }
+        else
+        {
             grid->displayMarkline = false;
         }
         mCurrentlyMovingObject->setAlpha(0.5f);
