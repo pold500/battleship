@@ -23,39 +23,37 @@
 
 bool BSGameLayer::init()
 {
-    OsamaAI *_ai = new OsamaAI();
-    GameDriver::getInstance()->setAI(_ai);
+    OsamaAI *osamaAI = new OsamaAI();
+    GameDriver::getInstance()->setAI(osamaAI);
 
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();
-    player->setPosition(10 , 30);
-    ai->setPosition( winSize.width / 2 + 20, 30);
+    mPlayerGrid->setPosition(10 , 30);
+    mEnemyGrid->setPosition( winSize.width / 2 + 20, 30);
 
 
 
-    player->setColor(ccColor3B{255,50,255});
+    mPlayerGrid->setColor(ccColor3B{255,50,255});
     std::vector<Ship*> shipsVector;
 
     fillWithShips(shipsVector);
 
+    mPlayerGrid->mShowFleet = true;
 
-
-    player->m_showFleet = true;
-
-    player->loadShips(shipsVector);
+    mPlayerGrid->loadShips(shipsVector);
 
     std::vector<Ship*> shipsVector2;
     fillWithShips(shipsVector2);
 
-    ai->m_showFleet = false;
+    mEnemyGrid->mShowFleet = false;
 
-    ai->loadShips(shipsVector2);
+    mEnemyGrid->loadShips(shipsVector2);
 
     CCSprite* background = CCSprite::create("Background.jpg");
     background->setPosition(ccp(winSize.width * 0.5f, winSize.height * 0.5f));
     this->addChild(background);
 
-    this->addChild(player.get());
-    this->addChild(ai.get());
+    this->addChild(mPlayerGrid.get());
+    this->addChild(mEnemyGrid.get());
 
     this->setTouchEnabled(true);
     this->setTouchMode(ccTouchesMode::kCCTouchesOneByOne);
@@ -69,17 +67,17 @@ bool BSGameLayer::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 {
     if(GameDriver::getInstance()->canAttack()) {
         CCPoint location = pTouch->getLocation();
-        if(ai->boundingBox().containsPoint(location))
+        if(mEnemyGrid->boundingBox().containsPoint(location))
         {
             //detect grid coordinate
-            CCPoint gridCoord = ai->convertToNodeSpace(location);
+            CCPoint gridCoord = mEnemyGrid->convertToNodeSpace(location);
             int xCell = floor(gridCoord.x / cellSize);
             int yCell = floor(gridCoord.y / cellSize);
-            if(!ai->isCellTested(xCell, yCell))
+            if(!mEnemyGrid->isCellTested(xCell, yCell))
             {
-                ai->hitCell(xCell, yCell);
-                //player->getGridStatus();
-                GameDriver::getInstance()->aiPerformAttack(player.get());
+                mEnemyGrid->hitCell(xCell, yCell);
+                //mPlayerGrid->getGridStatus();
+                GameDriver::getInstance()->aiPerformAttack(mPlayerGrid.get());
             }
 
         }

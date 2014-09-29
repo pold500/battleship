@@ -49,6 +49,35 @@ void GameGridLayer::draw()
     
 }
 
+void GameGridLayer::removePointsFromSet(const Point2D<int>& startPoint, const ShipType shipType,
+                         const ShipOrientation shipOrientation)
+{
+    const size_t shipSize = static_cast<size_t>(shipType);
+    pointsSet.erase(startPoint);
+    //foreach cell of the ship
+    std::vector<Point2D<int>> vectors;
+    for(int i=-1; i<=1; i++)
+        for(int j=-1; j<=1; j++)
+        {
+            vectors.push_back(Point2D<int>(i, j));
+        }
+
+
+    Point2D<int> step = ( shipOrientation == ShipOrientation::horizontal )?
+    Point2D<int>{1,0}:Point2D<int>{0,1};
+    Point2D<int> pos;
+    for(int i=0; i<shipSize; i++)
+    {
+        pos = startPoint + step * i;
+        for(int i=0; i<=8; i++)
+        {
+            Point2D<int> fillPoint = pos + vectors[i];
+            pointsSet.erase(fillPoint);
+        }
+    }
+
+}
+
 void GameGridLayer::drawHighlightedCell(const CCPoint& point, const bool canPlace)
 {
     glLineWidth(4.f); //set smaller width for a line
@@ -227,7 +256,7 @@ void GameGridLayer::loadShips(std::vector<Ship*>&  shipsVector)
 
         matrix[pp.x][pp.y] = CellState::Norm;
         CCPoint globalShipCoord(pp.x * cellLength , pp.y * cellLength );
-        ship->setVisible(m_showFleet);
+        ship->setVisible(mShowFleet);
         this->addChild(ship); //adds ships visually to a node
         ship->setPosition(globalShipCoord);
         quadTree->AddOccupant(ship);

@@ -43,20 +43,22 @@ public:
     std::set<Point2D<int>>& getPointsSet() {  return pointsSet; }
     void setShip(Ship* ship){ mShip = ship; }
 
+    void removePointsFromSet(const Point2D<int>& shipPosition, const ShipType shipType,
+                             const ShipOrientation shipOrientation);
+
     void insertShipAndFillAdjacentPoints(const Point2D<int>& startPoint, const ShipType shipType,
                                          const ShipOrientation orientation,
                                          std::set<Point2D<int>>& pointsSet);
 
     void highlightAdjacentPoints(const Point2D<int>& startPoint);
 
-    Point2D<int> mShipInsertionCoord;
 
     const float gridSize = 190;
     const float cellSize = gridSize / 10;
 
-    bool m_showFleet; //turn on for player grid, turn off for an enemy grid
-
+    bool mShowFleet; //turn on for player grid, turn off for an enemy grid
     bool isCellTested(int x, int y);
+
     CellState hitCell(int x, int y);
     CellState hitCell(const CCPoint& gridCoords);
 
@@ -71,7 +73,7 @@ public:
 
     GameGridLayer():
         CCLayerColor(),
-        m_showFleet(false),
+        mShowFleet(false),
         quadTree(new QuadTree(AABB(Vec2f(0, 0), Vec2f(190.f, 190.f)))),
         displayMarkline(false)
     {

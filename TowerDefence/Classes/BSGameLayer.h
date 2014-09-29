@@ -16,9 +16,9 @@ USING_NS_CC;
 
 class BSGameLayer: public CCLayer {
     //create two grids
-    std::unique_ptr<GameGridLayer> player;
-    std::unique_ptr<GameGridLayer> ai;
-    BSGameLayer():player(new GameGridLayer()), ai(new GameGridLayer())
+    std::unique_ptr<GameGridLayer> mPlayerGrid;
+    std::unique_ptr<GameGridLayer> mEnemyGrid;
+    BSGameLayer():mPlayerGrid(new GameGridLayer()), mEnemyGrid(new GameGridLayer())
     {}
 public:
     virtual bool init();

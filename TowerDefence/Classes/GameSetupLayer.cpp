@@ -163,16 +163,12 @@ void GameSetupLayer::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
             updateViewCounters();
             this->removeChild(*it);
             mAllocatedShipsArray.erase(it);
+            CCPoint gridCoordinates = grid->convertToNodeSpace(pTouch->getLocation());
+            Point2D<int> gridPoint = { static_cast<int>(gridCoordinates.x / cellSize), static_cast<int>(gridCoordinates.y / cellSize) };
+            grid->removePointsFromSet(gridPoint, mCurrentlyMovingObject->getShipType(), mCurrentlyMovingObject->getOrientation());
         }
         else
         {
-            //it intersects with a grid
-            //turn on binding to a grid
-            //decrease the count in dock
-            //update view counters
-            //get the ship type
-            //decrease model counter
-            //update view counter
             CCPoint gridCoordinates = grid->convertToNodeSpace(pTouch->getLocation());
             Point2D<int> gridPoint = { static_cast<int>(gridCoordinates.x / cellSize), static_cast<int>(gridCoordinates.y / cellSize) };
             Ship* ship = mCurrentlyMovingObject;

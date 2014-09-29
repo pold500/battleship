@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/GameGridLayer.cpp"
-            timestampString = "433696559.716426"
+            timestampString = "433707177.763197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "unitTest(QuadTree* tree)"
             landmarkType = "7">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/GameGridLayer.cpp"
-            timestampString = "433696559.716426"
+            timestampString = "433707177.763197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "unitTest(QuadTree* tree)"
             landmarkType = "7">
             <Locations>
@@ -82,11 +82,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/GameGridLayer.cpp"
-            timestampString = "433696559.716426"
+            timestampString = "433707177.763197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "unitTest(QuadTree* tree)"
             landmarkType = "7">
          </BreakpointContent>
@@ -98,11 +98,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/GameGridLayer.cpp"
-            timestampString = "433696559.716426"
+            timestampString = "433707177.763197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "unitTest(QuadTree* tree)"
             landmarkType = "7">
          </BreakpointContent>
@@ -114,11 +114,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/GameGridLayer.cpp"
-            timestampString = "433696559.716426"
+            timestampString = "433707177.763197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "unitTest(QuadTree* tree)"
             landmarkType = "7">
          </BreakpointContent>
@@ -302,7 +302,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/BSGameLayer.cpp"
-            timestampString = "433449989.173277"
+            timestampString = "433705739.18632"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "BSGameLayer::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TowerDefence/Classes/BSGameLayer.cpp"
+            timestampString = "433705739.18632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -318,27 +334,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/BSGameLayer.cpp"
-            timestampString = "433449989.173277"
+            timestampString = "433705739.18632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "BSGameLayer::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TowerDefence/Classes/BSGameLayer.cpp"
-            timestampString = "433449989.173277"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "BSGameLayer::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)"
             landmarkType = "5">
          </BreakpointContent>
@@ -678,11 +678,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/GameGridLayer.cpp"
-            timestampString = "433703174.014228"
+            timestampString = "433707177.763197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "GameGridLayer::notifyShipCollection(const Point2D&lt;int&gt;&amp; point)"
             landmarkType = "5">
          </BreakpointContent>
@@ -694,11 +694,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/GameGridLayer.cpp"
-            timestampString = "433703174.014228"
+            timestampString = "433707177.763197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "GameGridLayer::hitCell(int i, int j)"
             landmarkType = "5">
          </BreakpointContent>
@@ -759,11 +759,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/GameGridLayer.cpp"
-            timestampString = "433703174.014228"
+            timestampString = "433707177.763197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "GameGridLayer::hitCell(int i, int j)"
             landmarkType = "5">
          </BreakpointContent>
@@ -823,13 +823,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TowerDefence/Classes/GameSetupLayer.cpp"
-            timestampString = "433701800.367028"
+            timestampString = "433707177.763197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
-            landmarkName = "GameSetupLayer::updateViewCounters()"
-            landmarkType = "5">
+            startingLineNumber = "190"
+            endingLineNumber = "190">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -905,6 +903,54 @@
             startingLineNumber = "140"
             endingLineNumber = "140"
             landmarkName = "GameSetupLayer::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TowerDefence/Classes/GameGridLayer.cpp"
+            timestampString = "433704124.506208"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "GameGridLayer::draw()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TowerDefence/Classes/GameGridLayer.cpp"
+            timestampString = "433706961.409326"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "GameGridLayer::removePointsFromSet(const Point2D&lt;int&gt;&amp; startPoint, const ShipType shipType, const ShipOrientation shipOrientation)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TowerDefence/Classes/GameGridLayer.cpp"
+            timestampString = "433707271.97784"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "GameGridLayer::draw()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
