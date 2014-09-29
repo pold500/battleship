@@ -90,8 +90,40 @@ Ship* ShipDock::getShipFromDock(ShipType type)
 
 void ShipDock::decreaseCounter(ShipType type)
 {
-    const size_t i = static_cast<size_t>(type);
-    shipsCounters[i]--;
+    switch (type) {
+        case ShipType::Deck1:
+            shipsWith1Docks--;
+            break;
+        case ShipType::Deck2:
+            shipsWith2Docks--;
+            break;
+        case ShipType::Deck3:
+            shipsWith3Docks--;
+            break;
+        case ShipType::Deck4:
+            shipsWith4Docks--;
+        default:
+            break;
+    }
+}
+
+void ShipDock::increaseCounter(ShipType type)
+{
+    switch (type) {
+        case ShipType::Deck1:
+            shipsWith1Docks++;
+            break;
+        case ShipType::Deck2:
+            shipsWith2Docks++;
+            break;
+        case ShipType::Deck3:
+            shipsWith3Docks++;
+            break;
+        case ShipType::Deck4:
+            shipsWith4Docks++;
+        default:
+            break;
+    }
 }
 
 ShipDock::ShipDock():
@@ -101,7 +133,7 @@ ShipDock::ShipDock():
     shipsWith4Docks(1)
 
 {
-    shipsCounters = {0};
+   
 }
 
 

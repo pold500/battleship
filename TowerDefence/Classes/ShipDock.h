@@ -19,13 +19,15 @@ class ShipDock
     size_t shipsWith2Docks;
     size_t shipsWith3Docks;
     size_t shipsWith4Docks;
-    std::array<int, 4> shipsCounters;
     ShipDock();
 public:
     static ShipDock* getInstance();
+
     std::size_t getFreeShipsCount(ShipType);
     Ship* getShipFromDock  (ShipType);
+
     void decreaseCounter(ShipType type);
+    void increaseCounter(ShipType type);
 
 };
 

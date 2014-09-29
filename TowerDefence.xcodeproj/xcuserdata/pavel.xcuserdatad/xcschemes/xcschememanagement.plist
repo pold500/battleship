@@ -4,15 +4,80 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BattleshipsLib.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>BattlshipsLib.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>TestBattlesShip.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>TowerDefence.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>UnitTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2ABC771317C4EDFD0034B671</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E93EF5B019D487A600FBB629</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9AAF88419D582C40046299A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9AAF89B19D588600046299A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9AAF8B119D588600046299A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9AAF8C919D58C840046299A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9AAF8DF19D58DD90046299A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9AAF8EC19D58DD90046299A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9AAF94C19D59A9B0046299A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9AAF95919D59A9B0046299A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

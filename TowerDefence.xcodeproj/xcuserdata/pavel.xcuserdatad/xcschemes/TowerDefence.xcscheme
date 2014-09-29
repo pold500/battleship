@@ -28,6 +28,56 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9AAF88419D582C40046299A"
+               BuildableName = "TowerDefence Tests.xctest"
+               BlueprintName = "TowerDefence Tests"
+               ReferencedContainer = "container:TowerDefence.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9AAF8B119D588600046299A"
+               BuildableName = "TestBattlesShipTests.xctest"
+               BlueprintName = "TestBattlesShipTests"
+               ReferencedContainer = "container:TowerDefence.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9AAF8C919D58C840046299A"
+               BuildableName = "TowerDefence Tests Cocoa.xctest"
+               BlueprintName = "TowerDefence Tests Cocoa"
+               ReferencedContainer = "container:TowerDefence.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9AAF8EC19D58DD90046299A"
+               BuildableName = "BattlshipsLibTests.xctest"
+               BlueprintName = "BattlshipsLibTests"
+               ReferencedContainer = "container:TowerDefence.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9AAF95919D59A9B0046299A"
+               BuildableName = "BattleshipsLibTests.xctest"
+               BlueprintName = "BattleshipsLibTests"
+               ReferencedContainer = "container:TowerDefence.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

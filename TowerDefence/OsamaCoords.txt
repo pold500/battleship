@@ -1,0 +1,15 @@
+#1 deck orientation : 0 - horizontal, 1 - vertical
+#0 0 0
+#0 2 0
+#0 4 0
+#0 6 0
+#2 deck
+#3 6 0
+#3 8 0
+#7 8 0
+#3 deck
+#7 1 1
+#9 0 1
+#4 deck
+5 2 1
+

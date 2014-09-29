@@ -38,7 +38,7 @@ void QuadTree::Query(const AABB &queryRegion, std::vector<QuadTreeOccupant*> &qu
 	// First parse the occupants outside of the root and
 	// add them to the array if the fit in the query region
 	for(std::unordered_set<QuadTreeOccupant*>::iterator it = outsideRoot.begin(); it != outsideRoot.end(); it++)
-		if(/*it._Ptr*/(*it)->aabb.Intersects(queryRegion))
+		if((*it)->aabb.Intersects(queryRegion))
 			queryResult.push_back(*it);
 
 	// Then query the tree itself

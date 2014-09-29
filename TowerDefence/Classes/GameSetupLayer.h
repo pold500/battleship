@@ -24,16 +24,22 @@ class GameSetupLayer:  public CCLayer {
 
     GameGridLayer* grid;
 
-    std::vector<Ship*> shipArray;
-    std::array<CCPoint, 4> shipOriginsPoint;
+    std::vector<Ship*> mStaticShipsArray;
+    std::vector<Ship*> mAllocatedShipsArray;
+    std::vector<Ship*>::iterator it;
+    struct
+    {
+        uint8_t _4deck;
+        uint8_t _3deck;
+        uint8_t _2deck;
+        uint8_t _1deck;
+    } mCounters;
 
-    CCRect shipOriginRect;
-    CCRect shipDestRect;
+    CCSprite* mShipsDock;
+    Ship*     mCurrentlyMovingObject;
 
-    ShipDock* shipDock;
-    Ship* currentlyMovingObject;
-
-    std::array<CCLabelTTF*, 4> shipsCountLabelsArray;
+    std::array<CCPoint,     4> mShipPositionsInDock;
+    std::array<CCLabelTTF*, 4> mShipsCountLabelsArray;
 
     void bindToGridCells(const CCPoint& location, const CCRect& gridDimensions);
     void printCellNumber(const CCPoint& mouseLocation, const CCRect& gridDimensions);
@@ -45,8 +51,6 @@ public:
     virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);
-
-    //virtual void ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent);
 
     static CCScene* scene();
     CREATE_FUNC(GameSetupLayer);

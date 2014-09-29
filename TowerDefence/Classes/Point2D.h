@@ -18,17 +18,34 @@ struct Point2D
     Point2D(){}
     const bool operator==(const Point2D<T>& rhs) const
     {
-        return (this->x==rhs.x&&this->y==rhs.y)?true:false;
+        return ((this->x * 10 + this->y) == (rhs.x * 10 + rhs.y));
     }
     const bool operator<(const Point2D<int>& rhs) const
     {
-        return (rhs.x<this->x&&rhs.y<this->y)?true:false;
+        return ((this->x * 10 + this->y) <  (rhs.x * 10 + rhs.y));
     }
-    const Point2D<T>& operator+(const Point2D& rhs) const
+    const Point2D<T> operator+(const Point2D& rhs) const
     {
         return Point2D<T>(this->x + rhs.x, this->y + rhs.y );
     }
-
+    const Point2D<T> operator*(const Point2D<int>& rhs) const
+    {
+        return Point2D<int>(this->x*rhs.x, this->y*rhs.y);
+    }
+    const Point2D<T> operator*(const int rhs) const
+    {
+        return Point2D<int>(this->x*rhs, this->y*rhs);
+    }
+    const Point2D<T> operator=(const Point2D<int>& rhs)
+    {
+        this->x =  rhs.x;
+        this->y =  rhs.y;
+        return Point2D<T>(this->x, this->y);
+    }
+    const Point2D<T>& operator+=(const Point2D<int>& rhs)
+    {
+        return Point2D<T>(this->x+rhs.x, this->y*rhs.y);
+    }
 };
 
 #endif
